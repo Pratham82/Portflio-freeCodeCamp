@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/c94e37b448.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfolio</title>
+   
+</head>
+<body>
+    <nav id="navbar">
+        <br><br>
+    
+        <p id="close-nav"><a href="javascript:void(0)"onclick="closeNav()">&nbsp;&nbsp;&times;</a></p>
+        <div id="nav-content">
+            <ul>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#abou-me">About</a></li>
+                
+                <li id="close-nav"><a href="javascript:void(0)"  onclick="closeNav()">&times;</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <button id="nav-button-fixed" style="font-size:30px;cursor:pointer" onclick="openNav()"> <i class="fas fa-bars"></i></button>
+    
+    <header id ="welcome-section" class="main-section"> 
+        
+        <h1>
+            👋🏼Hi, I'm Prathamesh <br>
+             <h2>I'm a <span class="animate"></span></h2>
+        </h1>
+        <div>
+        <a href="https://github.com/Pratham82" id="profile-link" target="_blank"> <i class="fab fa-github" id="med"></i></a> 
+        <a href="https://www.linkedin.com/in/prathamesh-mali-20582318a/" target="_"><i class="fab fa-linkedin"></i></a> 
+        <a href="https://codepen.io/Pratham82" target="_"><img src="https://i.postimg.cc/Xqq2B9rg/iconfinder-Codepen-1298732white.png" id="codepen-ico" alt=""></a>
+        </div>
+        <br>
+        <div id ="about-me">
+            <h2>About me:</h2>
+        <br>
+        <p>I'm 2019 BSc CS graduate and, Im a self taught developer.</p> <p>I like to learn new technologies and building stuff. </p> <p>I am proficient in <a href="https://github.com/Pratham82/Python-Programming" id="python">Python🐍</a>   and  <a href="https://github.com/Pratham82/Java-Programming" id ="java">Java♨️</a> along with that, </p><p>I can also do the 🖥️  front end work.</p> 
+        <br>
+        </div>
+              
+        <button id="nav-button" style="font-size:30px;cursor:pointer" onclick="openNav()"> <i class="fas fa-angle-down"></i></button>
+    </header>
+    
+    <section id="projects" class="main-section">
+        <header>
+            <h3> Projects done by me: </h3>
+        </header>
+        <br>
+        <div class = "projects-box">
+            <div class="project-tile" id = "project-1" >
+                 <p>Covid-19 tracker</p>
+                <img src="https://i.postimg.cc/wjRjZSZk/corona-tracker.jpg" alt="" height="100px" width="100px">
+                <button><a href="https://coronainfo-tracker.netlify.app/" target="0">Demo</a></button>
+                <button><a href="https://github.com/Pratham82/Covid-19-tracker" target="0">Source</a></button>
+            </div>
+            <div class="project-tile" id = "project-2" >
+                <p>Omni-food landing page</p>
+                <img src="https://i.postimg.cc/Lsz66jHY/omni-food.jpg" alt="" height="100px" width="100px">
+                <button><a href="https://omnifood-app-2020.netlify.app/" target="0">Demo</a></button>
+                <button><a href="https://github.com/Pratham82/Omni-food" target="0">Source</a></button>
+                
+            </div>
+            <div class="project-tile" id = "project-3"  project-tile>
+                <p>Technical documentation</p>
+                <img src="https://i.postimg.cc/hGFtB2qR/tech-doc.jpg" alt="" height="100px" width="100px">
+                <button><a href="https://codepen.io/Pratham82/full/GRpXByo" target="0">Demo</a></button>
+                <button><a href="" target="0">Source</a></button>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="go-top" title="Go to top"> <i class="fas fa-angle-up"></i></button>
+    </section>
+    
+    <!-- Always give cdn links before your script.js file -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
